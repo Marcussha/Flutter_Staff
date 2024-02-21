@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "466691426632",
+    "project_id": "radiant-micron-403105",
+    "storage_bucket": "radiant-micron-403105.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466691426632:android:438e0ae624d6c3f6704b7d",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFBC9UlUHTFLIRWLIU6-E7d_3uO4x8MWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466691426632:android:12650232f2e9458b704b7d",
+        "android_client_info": {
+          "package_name": "com.example.flutter_c"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFBC9UlUHTFLIRWLIU6-E7d_3uO4x8MWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
