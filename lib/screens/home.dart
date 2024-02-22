@@ -44,12 +44,14 @@ class _IndexState extends State<Index> {
 
             List<DataRow> rows = [];
             snapshot.data!.docs.forEach((doc) {
+              String id = doc['Id'];
               String firstName = doc['First_Name'];
               String lastName = doc['Last_Name'];
               String date = doc['Date'];
 
               DataRow row = DataRow(
                 cells: [
+                  DataCell(Text(id)),
                   DataCell(Text(firstName)),
                   DataCell(Text(lastName)),
                   DataCell(Text(date)),
@@ -62,6 +64,7 @@ class _IndexState extends State<Index> {
               scrollDirection: Axis.horizontal,
               child: DataTable(
                 columns: [
+                  DataColumn(label: Text("ID")),
                   DataColumn(label: Text('First Name')),
                   DataColumn(label: Text('Last Name')),
                   DataColumn(label: Text('Date')),
