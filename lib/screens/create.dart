@@ -237,7 +237,7 @@ class _StaffState extends State<Staff> {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(content: Text('Staff added successfully!')),
                     );
-                      // Clear the form fields
+
                       first_nameController.clear();
                       last_nameController.clear();
                       dateController.clear();
@@ -245,6 +245,9 @@ class _StaffState extends State<Staff> {
                       cityController.clear();
                       wardController.clear();
                       districtController.clear();
+                      setState(() {
+                        selectedDate = null;
+                      });
                   }).catchError((error) {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(content: Text('Failed to add staff!')),
