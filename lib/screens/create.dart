@@ -228,7 +228,10 @@ class _StaffState extends State<Staff> {
                     "First_Name": first_nameController.text,
                     "Last_Name": last_nameController.text,
                     "Date": dateController.text,
+                    "Address": addressController.text,
                     "City": cityController.text,
+                    "Ward": wardController.text,
+                    "District": districtController.text,
                   };
                   await DatabaseMethod().addStaff(staffInfoMap, id).then((value) {
                     ScaffoldMessenger.of(context).showSnackBar(
